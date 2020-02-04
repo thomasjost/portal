@@ -2,7 +2,7 @@
 
 @section('body')
     @include('layouts._alerts')
-
+{{--
     <div class="border-b bg-white">
         <div class="container mx-auto flex flex-col items-center py-20 px-4">
             <img src="{{ asset('images/laravelio.png') }}" title="Laravel.io" alt="Laravel.io logo" class="w-full md:w-2/5 mb-8">
@@ -22,12 +22,12 @@
                 @endif
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="border-b">
         @include('layouts._ads._footer')
     </div>
-
+{{--
     <div class="border-b bg-gray-100">
         <div class="container mx-auto py-12 px-4">
             <h2 class="text-4xl text-gray-800 mb-12 text-center">Laravel.io in numbers</h2>
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="border-b bg-white text-gray-700">
         <div class="container mx-auto py-12 px-4">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-
+{{--
     <div class="border-b">
         <div class="container mx-auto py-12 px-4">
             <h2 class="text-4xl text-center text-gray-800">You can help others</h2>
@@ -121,9 +121,9 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="border-b bg-gray-100 text-gray-700">
+    {{-- <div class="border-b bg-gray-100 text-gray-700">
         <div class="container mx-auto py-12 px-4">
             <h2 class="text-4xl pb-8 mb-8 text-center">More from the community</h2>
             <div class="flex flex-wrap text-center justify-center items-center md:mb-20 w-full lg:w-1/2 mx-auto">
@@ -167,5 +167,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

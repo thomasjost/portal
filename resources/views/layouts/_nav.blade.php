@@ -2,13 +2,14 @@
     <div class="container mx-auto px-4">
         <div class="nav-wrapper">
             <div class="nav-container">
-                <a class="my-4" href="{{ route('home') }}">
+                <a class="my-4" href="{{ route('home') }}">Home</a>
+                {{-- <a class="my-4" href="{{ route('home') }}">
                     <img src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo" class="w-40"/>
-                </a>
+                </a> --}}
 
-                <button 
-                    type="button" 
-                    id="sidebar-open" 
+                <button
+                    type="button"
+                    id="sidebar-open"
                     class="flex items-center lg:hidden text-gray-500 focus:outline-none cursor-pointer"
                     @click="mobileActive = true"
                     x-show="!mobileActive"
@@ -18,9 +19,9 @@
                     </svg>
                 </button>
 
-                <button 
-                    type="button" 
-                    id="sidebar-close" 
+                <button
+                    type="button"
+                    id="sidebar-close"
                     class="flex items-center lg:hidden text-gray-500 focus:outline-none cursor-pointer"
                     @click="mobileActive = false"
                     x-show="mobileActive"
@@ -33,11 +34,11 @@
             </div>
 
             <ul class="nav" :class="{ active: mobileActive }">
-                <li class="{{ active(['forum', 'threads*', 'thread']) }}"><a href="{{ route('forum') }}">Forum</a></li>
+                {{-- <li class="{{ active(['forum', 'threads*', 'thread']) }}"><a href="{{ route('forum') }}">Forum</a></li>
                 <li><a href="https://paste.laravel.io">Pastebin</a></li>
                 <li class="relative" x-data="{ open: false }">
                     <a href="#" role="button" aria-haspopup="true" aria-expanded="false" @click="open = true">Chat</a>
-                    <ul 
+                    <ul
                         class="subnav"
                         x-show="open"
                         @click.away="open = false"
@@ -51,7 +52,7 @@
                 <li><a href="https://laravelevents.com">Events</a></li>
                 <li class="relative" x-data="{ open: false }">
                     <a href="#" role="button" aria-haspopup="true" aria-expanded="false" @click="open = true">Community</a>
-                    <ul 
+                    <ul
                         class="subnav"
                         x-show="open"
                         @click.away="open = false"
@@ -66,7 +67,7 @@
                         <li><a href="https://www.laravelpodcast.com">Podcast</a></li>
                         <li><a href="https://ecosystem.laravel.io">Ecosystem</a></li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
             <ul class="nav" :class="{ active: mobileActive }">
                 @if (Auth::guest())
@@ -77,7 +78,7 @@
                         <a href="#" role="button" aria-haspopup="true" aria-expanded="false" @click="open = true">
                             <img class="rounded-full" src="{{ Auth::user()->gravatarUrl(60) }}" style="width:30px;"> <span class="caret"></span>
                         </a>
-                        <ul 
+                        <ul
                             class="subnav subnav-right"
                             x-show="open"
                             @click.away="open = false"

@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/Code/laravelio":{"type":null,"mount_options":["uid=1000","gid=1000"],"guestpath":"/home/vagrant/Code/laravelio","hostpath":"/Users/thomas.jost/projects/fivefiftyfive/portal","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/thomas.jost/projects/fivefiftyfive/portal","disabled":false,"__vagrantfile":true}}}

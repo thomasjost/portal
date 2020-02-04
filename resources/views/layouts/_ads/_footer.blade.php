@@ -1,4 +1,4 @@
-@if ($adSenseClient = config('services.google.ad_sense.client'))
+{{-- @if ($adSenseClient = config('services.google.ad_sense.client'))
     <div class="container mx-auto" style="text-align:center;overflow:hidden;">
         <ins class="adsbygoogle footer-ad"
             data-ad-client="{{ $adSenseClient }}"
@@ -8,4 +8,4 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-@endif
+@endif --}}

@@ -3,8 +3,8 @@
 @section('body')
     <div>
         @yield('subnav')
-        
-        @include('layouts._alerts')
+
+        {{-- @include('layouts._alerts') --}}
 
         @yield('content')
     </div>
